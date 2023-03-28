@@ -9,5 +9,12 @@
 .news-box
 {
     height: 630px;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+.article-card
+{
+    width: 100%;
+    height: auto;
+    min-width: none;
+    max-width: fit-content;
 }
