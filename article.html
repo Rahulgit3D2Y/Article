@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assests/images/geu_logo.jpg">
+    <title>Article</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/article.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">G.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3 mt-lg-0" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="article-container">
+            <div class="heading-container">
+              <h1 class="heading">Lorem ipsum dolor  amet consectetur adipisicing elit. Molestias, ut!</h1>
+              <div class="info">
+                  <div><img src="./assests/images/geu_logo.jpg"class="logo" alt="">by Rahul Chaudhary</div>
+                  <div> April 25th, 2021</div>
+                  
+                  <div>Lorem  dolor sit amet</div>
+                  <div>Lorem idiv dor sit amet</div>
+              </div>
+             <hr> 
+            </div>
+            <div class="pretext">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur nihil nemo cumque suscipit impedit ratione vero! Reprehenderit, officia
+            </div>    
+            <img src="./assests/images/11-slow-website-hero-1200x450.jpg" class="img-fluid" alt="">
+            <div class="text">
+              <span class="first-letter">Y</span>orem ipsum, dolor sit amet consectetur adipisicing elit. Sunt ab voluptatem animi in suscipit voluptatibus cupiditate tempore, <span class="blur-text" id="blur-text">sint numquam doloremque quasi? Iure vero a sunt, ipsum deleniti ut deserunt repellat voluptatibus eum aliquam excepturi officiis dolorum! Beatae animi, optio fugit doloribus hic eaque quasi, corporis modi et distinctio voluptatibus dolore corrupti blanditiis perferendis, quis numquam sit. Assumenda libero nesciunt quia atque quasi dolor quaerat dolorum est! Magni molestiae quibusdamres minima voluptate? Esse consectetur est dicta odio aspernatur neque? Fugit voluptatem distinctio saepe eos, excepturi voluptatibus? Nobis maxime blanditiis, rem temporibus similique sequi natus totam ab ut corrupti a? Suscipit quaerat dolores rem, rerum saepe culpa officiis inventore, beatae minus eos labore optio unde aspernatur?</span>
+            </div>
+            <button id="blur-btn">blur</button>
+            <div class="text-content text-content-default">
+              <h2>2. JavaScript Issues</h2>
+              <p>The availability of JavaScript/jQuery plugins has made it really convenient to add dynamic content to websites. However, if implemented incorrectly, <a href="https://www.mediatraining.ltd.uk/courses/javascript-courses">JavaScript</a> can cripple your website&#8217;s page load speed.</p>
+              <p>It takes time for jQuery &amp; JavaScript to be loaded, interpreted and executed. So if you are using multiple API calls to render JavaScript/jQuery data, it can result in significant delay while loading the web pages.</p>
+            </div>
+            <div class="text-content text-content-default">
+              <h4>Takeaways:</h4>
+              <ul>
+                <li>Script bloat is real. <a href="https://asperbrothers.com/blog/technical-seo-audit/">Audit your JavaScript</a> scripts to see what you really need and remove what you don&#8217;t.</li>
+                <li>Asynchronous loading is a must.</li>
+                <li>Consider using something like Segment or <a href="https://reviewgrower.com/how-do-i-add-google-analytics-to-google-my-business/">Google Tag Manager</a>. A single script for all your tools!</li>
+              </ul>
+            </div>
+        </div>
+        
+    </main>
+<!-- jquery -->
+<script>
+  $(document).ready(function() {
+    $("#blur-btn").click(function() {
+      $("#blur-text").css({
+        "filter": "blur(0px)",
+        "-webkit-filter": "blur(0px)", /* Safari blur */
+        "-moz-filter": "blur(0px)", /* Firefox blur */
+        "-o-filter": "blur(0px)", /* Opera blur */
+        "-ms-filter": "blur(0px)" /* IE blur */
+      });
+    });
+  });
+  
+  </script>
+  </section>
+
+    <!-- Scripts -->
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<!-- footer -->
+
+
+<div class="container-fluid p-5">
+    <hr class="my-5">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+      
+</body>
+</html>
